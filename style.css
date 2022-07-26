@@ -1,0 +1,477 @@
+@import url('https://fonts.googleapis.com/css2?family=Barlow:wght@600&family=Fraunces:opsz,wght@9..144,700;9..144,900&display=swap');
+
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+:root{
+ --Soft-red: hsl(7, 99%, 70%);
+ --Yellow: hsl(51, 100%, 49%);
+ --Dark-desaturated-cyan : hsl(167, 40%, 24%);
+ --Dark-blue : hsl(198, 62%, 26%);
+ --Dark-moderate-cyan : hsl(168, 34%, 41%);
+ --Very-dark-desaturated-blue: hsl(212, 27%, 19%);
+ --Very-dark-grayish-blue: hsl(213, 9%, 39%);
+ --Dark-grayish-blue: hsl(232, 10%, 55%);
+ --Grayish-blue: hsl(210, 4%, 67%);
+ --White: hsl(0, 0%, 100%);
+}
+
+header{
+    background-image: url("images/desktop/image-header.jpg");
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: 0% 100%;
+    height: 38rem;
+    color: var(--White);
+    margin-bottom: 0;
+}
+
+header h1{
+    font-family: "Fraunces", sans-serif;
+    text-align: center;
+    letter-spacing: 0.5rem;
+}
+
+.arrow{
+    position: relative;
+    top: 15%;
+    left: 48%;
+}
+
+nav{
+    display: flex;
+    gap: 65%;
+    align-items: center;
+    padding: 2% 4%;
+}
+
+.menu{
+    display: flex;
+    align-items: center;
+    gap: 10%;
+}
+
+.contact{
+    background-color: var(--White);
+    border-radius: 20px;
+    color: var(--Dark-blue);
+    font-weight: 600;
+    padding: 5%;
+}
+
+.contact:hover{
+    color: var(--White);
+    background-color: hsla(0, 0%, 100%, 0.3);
+    cursor: pointer;
+}
+
+.top{
+    display: flex;
+}
+
+.top .left{
+    width: 50%;
+    padding: 15% 10%;
+}
+
+.top .left h2,h3{
+    font-family: "fraunces", sans-serif;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.top .left p{
+    margin: 5% auto;
+    font-weight: 100;
+    font-family: "barlow", sans-serif;
+    color: var(--Dark-grayish-blue);
+}
+
+.top .left h3::after{
+    position: absolute;
+	content: '';
+    margin-top: 1%;
+    left: 9.5%;
+	border-radius: 10px;
+	height: 2%;
+    width: 9%;
+	background: var(--Yellow);
+	opacity: .3;
+    z-index: -1;
+}
+
+.top .left h3:hover{
+    cursor: pointer;
+}
+
+.top .left h3:hover:after{
+    opacity: .5;
+}
+
+.top .transform {
+    width: 50%;
+}
+
+.top .transform img{
+    width: 100%;
+}
+
+.middle{
+    margin-top: -1.5%;
+    height: 28rem;
+    display: flex;
+}
+
+.middle .right{
+    width: 50%;
+    padding: 10%;
+}
+
+.middle .right h2,h3{
+    padding-right: 15%;
+    font-family: "fraunces", sans-serif;
+    color: var(--Very-dark-desaturated-blue);
+}
+
+.middle .right p{
+    margin: 5% auto;
+    font-weight: 100;
+    font-family: "barlow", sans-serif;
+    color: var(--Dark-grayish-blue);
+}
+
+.middle .right h3::after{
+    position: absolute;
+	content: '';
+    margin-top: 1%;
+    left: 62%;
+	border-radius: 10px;
+	height: 2%;
+    width: 9%;
+	background: var(--Soft-red);
+	opacity: .3;
+    z-index: -1;
+}
+
+.middle .right h3:hover{
+    cursor: pointer;
+}
+
+.middle .right h3:hover:after{
+    opacity: .5;
+}
+
+.middle .stand img{
+    width: 95.5%;
+}
+
+.bottom{
+    display: flex;
+    height: 30rem;
+}
+
+.bottom .left{
+    color: var(--Dark-desaturated-cyan);
+    width: 50%;
+    background-image: url("images/desktop/image-graphic-design.jpg");
+    background-position: 30% 30%;
+    background-size: cover;
+}
+
+.bottom .left h3{
+    font-family: "fraunces", sans-serif;
+    color: var(--Dark-desaturated-cyan);
+    margin: 50% 0% 5% 15%;
+    text-align: center;
+}
+
+.bottom .left p{
+    font-family: "barlow", sans-serif;
+    margin: 0 20%;
+    text-align: center;
+}
+
+.bottom .right{
+    width: 50%;
+    background-size: cover;
+    background-image: url("images/desktop/image-photography.jpg");
+    background-position: 30% 5%;
+}
+
+.bottom .right h3{
+    font-family: "fraunces", sans-serif;
+    color: var(--Dark-blue);
+    margin: 50% 0% 5% 15%;
+    text-align: center;
+}
+
+.bottom .right p{
+    font-family: "barlow", sans-serif;
+    margin: 0 20%;
+    text-align: center;
+    color: var(--Dark-blue);
+}
+
+.profiles{
+    display: flex;
+    margin-bottom: 10%;
+}
+
+.clients h3{
+    text-align: center;
+    color: var(--Grayish-blue);
+    margin: 5% 0% 5% 15%;
+}
+
+.profile{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.profile img{
+    width: 10%;
+    border-radius: 50%;
+    margin-bottom: 10%;
+}
+
+.profile p{
+    color: var(--Very-dark-grayish-blue);
+    text-align: center;
+    margin: 0 15% 5% 15%;
+}
+
+.profile h4{
+    font-family: "Fraunces";
+    margin-bottom: 2%;
+}
+
+.profile small{
+    color: var(--Dark-grayish-blue);
+}
+
+.gallery{
+    display: flex;
+}
+
+.gallery picture img{
+    width: 100%;
+}
+
+footer{
+    padding: 5% 0;
+    margin-top: -0.3%;
+    background-color: hsl(167, 44%, 70%);
+    text-align: center;
+}
+
+footer h1{
+    color: var(--Dark-desaturated-cyan);
+}
+
+.f-menu{
+    margin: 5% 0;
+    display: flex;
+    color: var(--Dark-desaturated-cyan);
+    justify-content: center;
+    gap: 5%;
+}
+
+.f-menu p:hover{
+    color: var(--White);
+    cursor: pointer;
+}
+
+.logos{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2%;
+}
+
+.logos img:hover{
+    cursor: pointer;
+}
+
+.h-menu,.show{
+    display: none;
+}
+
+@media screen and (max-width: 375px) {
+    
+    header{
+        background-image: url("images/mobile/image-header.jpg");
+        height: 30rem;
+    }
+    
+    header h1{
+        margin-top: 10%; 
+    }
+    
+    .arrow{
+        top: 10%;
+    }
+    
+    nav{
+        gap: 50%;
+    }
+
+    .h-menu{
+        display: block;
+    }
+
+    .h-menu:hover{
+        cursor: pointer;
+    }
+
+    .menu{
+        display: none;
+    }
+    
+    .show{
+        display: flex;
+        width: 80%;
+        position: absolute;
+        top: 20%;
+        left: 10%;
+        flex-direction: column;
+        background-color: var(--White);
+        color: var(--Dark-grayish-blue);
+        padding: 10% 0;
+        z-index: 1;
+    }
+
+    .menu::before{
+        content: " ";
+        position: absolute;
+        top: -8%; 
+        left: 95%;
+        margin-left: -5px;
+        border-width: 10px;
+        border-style: solid;
+        border-color: transparent var(--White)  var(--White) transparent  ;
+    }
+
+    .menu p{
+        font-weight: 600;
+        margin-top: 5%;
+    }
+    
+    .contact{
+        font-family: "fraunces";
+        background-color: var(--Yellow);
+        border-radius: 25px;
+        color: var(--Very-dark-desaturated-blue);
+        font-weight: 600;
+        padding: 5% 10%;
+    }
+    
+    .contact:hover{
+        color: var(--Very-dark-desaturated-blue);
+        background-color: var(--Yellow);
+        cursor: pointer;
+    }
+    
+    .top{
+        flex-direction: column-reverse;
+    }
+    
+    .top .left{
+        text-align: center;
+        width: 100%;
+        padding: 15%;
+    }
+
+    .top .left h3{
+        margin-left: 15%;
+    }
+    
+    .top .left h3::after{
+        margin-top: 4%;
+        left: 35%;
+        height: 3%;
+        width: 30%;
+    }
+    
+    .top .transform {
+        width: 100%;
+    }
+    
+    .top .transform img{
+        width: 100%;
+    }
+    
+    .middle{
+        margin-top: 0%;
+        flex-direction: column;
+        height: 35rem;
+        margin-bottom: 10%;
+    }
+    
+    .middle .right{
+        text-align: center;
+        width: 100%;
+    }
+    
+    .middle .right h2,h3{
+        margin-left: 20%;
+    }
+   
+    .middle .right h3::after{
+        margin-top: 4%;
+        left: 37%;
+        height: 3%;
+        width: 30%;
+    }
+    
+    .bottom{
+        flex-direction: column;
+        height: 40rem;
+    }
+    
+    .bottom .left , .bottom .right{
+        width: 100%;
+    }
+    
+    .bottom .left p, .bottom .right p{
+        margin: 0 5% 10% 5%;
+    }
+    
+    .profiles{
+        flex-direction: column;
+    }
+    
+    .clients h3{
+        margin: 5% 0% 10% 15%;
+    }
+    
+    .profile{
+        margin-bottom: 10%
+    }
+    
+    .profile img{
+        width: 15%;
+        margin-bottom: 5%;
+    }
+    
+    .gallery{
+        display: grid;
+        grid-template-columns: repeat(2,1fr);
+        grid-template-rows: repeat(2,1fr);
+    }
+
+    footer h1{
+        color: var(--Dark-desaturated-cyan);
+    }
+    
+    .f-menu{
+        justify-content: space-evenly;
+    }
+    
+    .logos{
+        margin-top: 10%;
+        gap: 10%;
+    }
+}
